@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Lwlb GamingHub</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+scroll-behavior:smooth;
+}
+
+body{
+background:#070707;
+color:white;
+overflow-x:hidden;
+}
+
+/* HEADER */
+
+header{
+position:relative;
+height:100vh;
+overflow:hidden;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.bg-video{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+object-fit:cover;
+z-index:-2;
+}
+
+.overlay{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.7);
+z-index:-1;
+}
+
+.hero h1{
+font-size:75px;
+margin-bottom:20px;
+color:#b026ff;
+text-shadow:0 0 25px #b026ff;
+}
+
+.hero p{
+font-size:24px;
+max-width:750px;
+line-height:1.8;
+color:#ddd;
+margin:auto;
+}
+
+.buttons{
+margin-top:35px;
+}
+
+.buttons a{
+display:inline-block;
+padding:15px 35px;
+margin:10px;
+background:#b026ff;
+border-radius:40px;
+color:white;
+text-decoration:none;
+font-size:18px;
+transition:0.3s;
+}
+
+.buttons a:hover{
+background:#7e22ce;
+transform:scale(1.05);
+}
+
+/* NAVBAR */
+
+nav{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(0,0,0,0.4);
+backdrop-filter:blur(10px);
+z-index:999;
+}
+
+.logo{
+font-size:30px;
+font-weight:bold;
+color:#b026ff;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:25px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+transition:0.3s;
+}
+
+nav ul li a:hover{
+color:#b026ff;
+}
+
+/* SECTIONS */
+
+section{
+padding:90px 10%;
+}
+
+.title{
+font-size:45px;
+text-align:center;
+margin-bottom:50px;
+color:#b026ff;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+
+.card{
+background:#151515;
+border-radius:20px;
+padding:25px;
+transition:0.3s;
+text-decoration:none;
+color:white;
+box-shadow:0 0 20px rgba(0,0,0,0.5);
+}
+
+.card:hover{
+transform:translateY(-10px);
+background:#1f1f1f;
+}
+
+.card h3{
+font-size:30px;
+margin-bottom:15px;
+color:#d48cff;
+}
+
+.card p{
+color:#ccc;
+line-height:1.8;
+}
+
+/* MUSIC PLAYER */
+
+#music{
+position:fixed;
+bottom:20px;
+right:20px;
+width:260px;
+opacity:0.8;
+z-index:999;
+}
+
+/* FOOTER */
+
+footer{
+padding:35px;
+text-align:center;
+background:#111;
+color:#888;
+margin-top:60px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+
+<div class="logo">LWLB</div>
+
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#sections">Sections</a></li>
+<li><a href="#">Discord</a></li>
+</ul>
+
+</nav>
+
+<!-- HEADER -->
+
+<header>
+
+<video autoplay muted loop playsinline class="bg-video">
+<source src="videos/bg.mp4" type="video/mp4">
+</video>
+
+<div class="overlay"></div>
+
+<div class="hero">
+
+<h1>Lwlb GamingHub</h1>
+
+<p>
+مرحبا بك في عالم الألعاب والأفلام والموسيقى والأنمي والخواطر.
+مجتمع احترافي بتصميم سينمائي فاخر.
+</p>
+
+<div class="buttons">
+<a href="#">Join Discord</a>
+<a href="#sections">Explore</a>
+</div>
+
+</div>
+
+</header>
+
+<!-- SECTIONS -->
+
+<section id="sections">
+
+<h2 class="title">أقسام الموقع</h2>
+
+<div class="cards">
+
+<a href="#" class="card">
+<h3>🎮 Gaming</h3>
+<p>
+قسم الألعاب والبطولات وأخبار الجيمينج.
+</p>
+</a>
+
+<a href="#" class="card">
+<h3>🎵 Music</h3>
+<p>
+استمتع بالموسيقى والأغاني الهادئة وقوائم التشغيل.
+</p>
+</a>
+
+<a href="#" class="card">
+<h3>🎬 Movies</h3>
+<p>
+أفضل الأفلام والمسلسلات والتوصيات السينمائية.
+</p>
+</a>
+
+<a href="#" class="card">
+<h3>✍️ Poetry</h3>
+<p>
+خواطر وأشعار واقتباسات أدبية فاخرة.
+</p>
+</a>
+
+<a href="anime.html" class="card">
+<h3>🍿 Anime</h3>
+<p>
+أفضل الأنميات والتوصيات والمشاهدة الجماعية.
+</p>
+</a>
+
+<a href="#" class="card">
+<h3>📺 TV Channels</h3>
+<p>
+قنوات مباشرة وترفيه متنوع.
+</p>
+</a>
+
+</div>
+
+</section>
+
+<!-- MUSIC -->
+
+<audio autoplay loop controls id="music">
+
+<source src="music/song.mp3" type="audio/mp3">
+
+</audio>
+
+<!-- FOOTER -->
+
+<footer>
+
+© 2026 Lwlb GamingHub - All Rights Reserved
+
+</footer>
+
+</body>
+</html>
